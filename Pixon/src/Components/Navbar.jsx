@@ -1,25 +1,29 @@
 import React from 'react'
 import logo from '../assets/logo.svg'
+import { SquareMenu } from 'lucide-react';
 const Navbar = () => {
     return (
-        <div className='w-full h-24  flex justify-evenly items-center '>
+        <div className='w-full h-24  flex justify-center gap-20 md:justify-evenly items-center '>
             {/* logo */}
-            <div className='text-center'>
-                <img className='text-center p-5' src={logo} alt="" />
+            <div className=''>
+                <img className=' p-5' src={logo} alt="" />
             </div>
             {/* Navbar */}
-            <div className='flex text-xl font-bold gap-10 list-none text-white px-12  py-5 rounded-4xl bg-[#FFFFFF0F]'>
-                <li className='decoration-0'>Home</li>
-                <li>About Us</li>
-                <li>Servics</li>
-                <li>Blog</li>
-                <li>Pages</li>
-                <li>Contact </li>
+            <div className=' hidden md:flex md:text-xl md:font-bold md:gap-10 list-none text-white md:px-12  md:py-5 md:rounded-4xl md:bg-[#FFFFFF0F]'>
+                <li className='hover:text-[#6BFDD9]'>Home</li>
+                <li className='hover:text-[#6BFDD9]'>About Us</li>
+                <li className='hover:text-[#6BFDD9]'>Servics</li>
+                <li className='hover:text-[#6BFDD9]'>Blog</li>
+                <li className='hover:text-[#6BFDD9]'>Pages</li>
+                <li className='hover:text-[#6BFDD9]'>Contact </li>
 
             </div>
             {/* Menu */}
             <div>
-                <button className=' bg-gradient-to-r from-[#6BFDD9] to-[#F0FF6C] rounded-4xl font-semibold px-5 py-4'>DOWNLOAD CV</button>
+                <button className='hidden bg-gradient-to-r from-[#6BFDD9] to-[#F0FF6C] rounded-4xl font-semibold px-5 py-4'>DOWNLOAD CV</button>
+                <div>
+                    <button className='bg-gradient-to-r from-[#6BFDD9] to-[#F0FF6C] p-1'> <SquareMenu /></button>
+                </div>
             </div>
         </div>
     )
