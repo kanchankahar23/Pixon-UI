@@ -4,7 +4,7 @@ import hero from '../assets/hero-img.png'
 const Hero = () => {
     return (
         <div className='text-white md:flex md:justify-center'>
-            <div className='md:w-[70%] w-[90%] md:m-30 m-5 flex flex-col gap-2 md:gap-6 md:flex md:flex-col'>
+            <div className='md:w-[70%] w-[90%] md:m-30 m-8 flex flex-col gap-2 md:gap-6 md:flex md:flex-col'>
 
                 <h3 className='text-xl md:text-3xl font-semibold '>Your Vision, My Design Expertise</h3>
                 <h1 className='text-4xl font-semibold md:text-7xl'><h2 className=' text-[#F0FF6C] font-semibold '>I'm james,</h2> product design based in USA</h1>
