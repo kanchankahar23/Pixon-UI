@@ -12,7 +12,7 @@ const Hero = () => {
                     <h3 className='text-xl md:text-3xl font-semibold '>Your Vision, My Design Expertise</h3>
                     <h1 className='text-4xl font-semibold md:text-7xl'><h2 className=' text-[#F0FF6C] font-semibold '>
                         <motion.h1
-                            initial={{ x: "100%", opacity: 0 }}
+                            initial={{ x: "30%", opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{
                                 duration: 3,
