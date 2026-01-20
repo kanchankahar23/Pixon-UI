@@ -3,7 +3,8 @@ import logo from '../assets/logo.svg'
 import { SquareMenu } from 'lucide-react';
 const Navbar = () => {
     return (
-        <div className='w-full h-24  flex justify-center gap-20 md:justify-evenly items-center '>
+        <>
+              <div className='w-full h-28  flex justify-between p-3 md:justify-evenly items-center '>
             {/* logo */}
             <div className=''>
                 <img className=' p-5' src={logo} alt="" />
@@ -20,12 +21,22 @@ const Navbar = () => {
             </div>
             {/* Menu */}
             <div>
-                <button className='hidden bg-gradient-to-r from-[#6BFDD9] to-[#F0FF6C] rounded-4xl font-semibold px-5 py-4'>DOWNLOAD CV</button>
+                <button className="hidden md:block bg-gradient-to-r from-[#6BFDD9] to-[#F0FF6C] rounded-4xl font-semibold px-5 py-4">
+                    DOWNLOAD CV
+                </button>
+
                 <div>
-                    <button className='bg-gradient-to-r from-[#6BFDD9] to-[#F0FF6C] p-1'> <SquareMenu /></button>
+                    <button className="md:hidden bg-gradient-to-r from-[#6BFDD9] to-[#F0FF6C] p-1">
+                        <SquareMenu />
+                    </button>
                 </div>
             </div>
+          
+
         </div>
+        <hr className='text-amber-100 h-1 ' /></>
+  
+          
     )
 }
 
